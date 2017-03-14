@@ -15,26 +15,27 @@
   </head>
   <body>
 
-    <header>
+    <header id="home">
       <nav>
         <div class="row">
           <img class="logo" src="assets/img/logo-white.png" alt="Omnifood logo">
+          <a href="#home"><img class="logo-black" src="assets/img/logo.png" alt="Omnifood logo"></a>
           <ul class="main-nav">
-            <li><a href="#">Food delivery</a></li>
-            <li><a href="#">How it works</a></li>
-            <li><a href="#">Our cities</a></li>
-            <li><a href="#">Sign up</a></li>
+            <li><a href="#food">Food delivery</a></li>
+            <li><a href="#works">How it works</a></li>
+            <li><a href="#cities">Our cities</a></li>
+            <li><a href="#signup">Sign up</a></li>
           </ul>
         </div>
       </nav>
       <div class="hero-text-box">
         <h1>Goodbye junk food.<br>Hello super healthy meals</h1>
-        <a class="btn btn-full" href="#">I’m hungry</a>
-        <a class="btn btn-ghost" href="#">Show me more</a>
+        <a class="btn btn-full js--scroll-to-plans" href="#">I’m hungry</a>
+        <a class="btn btn-ghost js--scroll-to-start" href="#">Show me more</a>
       </div>
     </header>
 
-    <section class="section-futures">
+    <section id="food" class="section-futures js--section-features">
       <div class="row">
         <h2>Get food fast &mdash; not fast food</h2>
         <p class="long-copy">
@@ -112,7 +113,7 @@
       </ul>
     </section>
 
-    <section class="section-steps">
+    <section id="works" class="section-steps">
       <div class="row">
         <h2>How it works &mdash; Simple as 1, 2, 3</h2>
       </div>
@@ -141,7 +142,7 @@
       </div>
     </section>
 
-    <section class="section-cities">
+    <section id="cities" class="section-cities">
       <div class="row">
         <h2>We're currently in these cities</h2>
       </div>
@@ -239,7 +240,7 @@
       </div>
     </section>
 
-    <section class="section-signup">
+    <section id="signup" class="section-signup js--section-plans">
       <div class="row">
         <div>
           <h2>Start eating healthy today</h2>
@@ -397,5 +398,12 @@
       </div>
     </footer>
 
+    <script src="https://cdn.jsdelivr.net/g/respond@1.4.2,html5shiv@3.7.3,selectivizr@1.0.3b"></script>
+    <script
+  src="https://code.jquery.com/jquery-3.1.1.min.js"
+  integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+  crossorigin="anonymous"></script>
+  <script src="assets\lib\js\jquery.waypoints.min.js" charset="utf-8"></script>
+  <script src="assets\js\script.js" charset="utf-8"></script>
   </body>
 </html>
