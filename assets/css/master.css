@@ -107,9 +107,10 @@ input[type=submit] {
   font-weight: 300;
   text-decoration: none;
   border-radius: 200px;
+  -webkit-transition: all 0.2s;
   transition: all 0.2s;
   cursor: pointer;
-  margin: 10px;
+  margin: 10px 10px 10px 0px;
 }
 .btn-full:link,
 .btn-full:visited,
@@ -149,6 +150,7 @@ a:visited {
   text-decoration: none;
   padding-bottom: 1px;
   border-bottom: 1px solid #e67e22;
+  -webkit-transition: all 0.2s;
   transition: all 0.2s
 }
 a:hover,
@@ -158,6 +160,7 @@ a:active {
 }
 /*HEADER*/
 header {
+  background-image: -webkit-linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url('img/hero.jpg');
   background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url('img/hero.jpg');
   background-size: cover;
   background-position: center;
@@ -170,7 +173,8 @@ header {
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
 }
 
 .logo {
@@ -198,6 +202,7 @@ header {
   text-decoration: none;
   text-transform: uppercase;
   font-size: 90%;
+  -webkit-transition: all 0.2s;
   transition: all 0.2s;
   border-bottom: 2px solid rgba(0,0,0,0);
   padding: 8px 0;
@@ -235,12 +240,15 @@ header {
   opacity: 0.7;
   width: 100%;
   height: auto;
-  transform: scale(1.15);
+  -webkit-transform: scale(1.15);
+          transform: scale(1.15);
+  -webkit-transition: all 0.5s;
   transition: all 0.5s;
 }
 
 .meal-photo img:hover {
-  transform: scale(1.03);
+  -webkit-transform: scale(1.03);
+          transform: scale(1.03);
   opacity: 1;
 }
 /*HOW IT WORKS*/
@@ -320,6 +328,7 @@ header {
 }
 /*REVIEWS*/
 .section-review {
+  background-image: -webkit-linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url("img/back-customers.jpg");
   background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url("img/back-customers.jpg");
   background-size: cover;
   background-position: center;
@@ -479,6 +488,7 @@ footer p {
   text-decoration: none;
   border: none;
   color: #888;
+  -webkit-transition: all 0.2s;
   transition: all 0.2s;
 }
 
@@ -501,6 +511,7 @@ footer p {
 .ion-social-twitter,
 .ion-social-googleplus,
 .ion-social-instagram {
+  -webkit-transition: all 0.2s;
   transition: all 0.2s;
 }
 
