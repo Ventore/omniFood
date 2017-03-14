@@ -5,13 +5,15 @@
   box-sizing: border-box;
 }
 
-html {
+html,
+body {
   background-color: #fff;
   color: #555;
   font-family: 'Lato', 'Arial', sans-serif;
   font-size: 20px;
   font-weight: 300;
   text-rendering: optimizeLegibility;
+  overflow-x: hidden;
 }
 
 .clearfix {zoom: 1}
@@ -107,6 +109,7 @@ input[type=submit] {
   border-radius: 200px;
   transition: all 0.2s;
   cursor: pointer;
+  margin-bottom: 10px;
 }
 .btn-full:link,
 .btn-full:visited,
@@ -164,6 +167,7 @@ header {
 }
 
 .hero-text-box {
+  width: 1140px;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -260,7 +264,7 @@ header {
 }
 
 .app-screen {
-  width: 40%;
+  width: 50%;
 }
 
 .works-step {
