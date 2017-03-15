@@ -294,6 +294,7 @@ header {
 /*HOW IT WORKS*/
 .section-steps {
   background: #f4f4f4;
+  overflow: hidden;
 }
 
 .step-box {
@@ -568,4 +569,15 @@ footer p {
 
 .ion-social-instagram:hover {
   color: #bc2a8d;
+}
+/*ANIMATION*/
+.js--waypoint-1,
+.js--waypoint-2,
+.js--waypoint-3 {
+  opacity: 0;
+}
+.js--waypoint-1.animated,
+.js--waypoint-2.animated,
+.js--waypoint-2.animated {
+  opacity: 1;
 }
