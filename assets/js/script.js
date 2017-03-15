@@ -4,10 +4,10 @@ $(document).ready(function() {
   $('.js--section-features').waypoint(function(direction) {
     if (direction === "down") {
       $('nav').addClass("sticky");
-      metaThema.content = "#e67e22";
+      metaThema.content = "#fff";
     } else {
       $('nav').removeClass("sticky");
-      metaThema.content = "#fff";
+      metaThema.content = "#e67e22";
     }
   }, {
     offset: "60px;"
