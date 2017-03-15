@@ -58,4 +58,10 @@ $(document).ready(function() {
   }, {
     offset: '60px;'
   });
+
+  $('#nav-icon1').click(function(){
+    $(this).toggleClass('open');
+    var nav = $('.main-nav');
+    nav.slideToggle(200);
+  });
 });

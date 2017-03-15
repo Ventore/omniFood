@@ -43,7 +43,23 @@
     width: 100%;
     margin: 0 0 4% 0;
   }
-  .main-nav { display: none;}
+  .main-nav {
+    display: none;
+    float: right;
+  }
+  .main-nav li {
+    display: block;
+    margin-bottom: 25px;
+  }
+
+  #nav-icon1 { display: block;}
+  .sticky #nav-icon1 {
+    margin-left: 55px;
+    margin-top: 14px;
+  }
+  .sticky .main-nav li a:link {
+    padding: 8px 0;
+  }
   .long-copy {
     width: 100%;
     margin-left: 0%;
