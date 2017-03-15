@@ -1,10 +1,13 @@
 $(document).ready(function() {
   // Sticky nav bar with waypoints plugin
+  var metaThema = document.getElementsByTagName('meta')[4];
   $('.js--section-features').waypoint(function(direction) {
     if (direction === "down") {
-      $('nav').addClass("sticky")
+      $('nav').addClass("sticky");
+      metaThema.content = "#e67e22";
     } else {
-      $('nav').removeClass("sticky")
+      $('nav').removeClass("sticky");
+      metaThema.content = "#fff";
     }
   }, {
     offset: "60px;"
