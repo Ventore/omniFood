@@ -11,12 +11,14 @@ $(document).ready(function() {
   })
   // Scroll To on click buttons
   $('.js--scroll-to-plans').click(function() {
-    console.log("click");
     $('html, body').animate({scrollTop: $('.js--section-plans').offset().top -60}, 1000);
   });
 
+  $('.logo-black').click(function() {
+    $('html, body').animate({scrollTop: $('header').offset().top }, 1000);
+  });
+
   $('.js--scroll-to-start').click(function() {
-    console.log("click");
     $('html, body').animate({scrollTop: $('.js--section-features').offset().top -60}, 1000);
   })
   //Navigation scroll
@@ -29,7 +31,8 @@ $(document).ready(function() {
           $('html, body').animate({
             scrollTop: target.offset().top -60
           }, 1000);
-          $(this).toggleClass('open');
+          $('#nav-icon1').toggleClass('open');
+          $('.main-nav').slideToggle(200);
           return false;
         }
       }
