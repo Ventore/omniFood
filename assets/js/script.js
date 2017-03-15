@@ -48,13 +48,13 @@ $(document).ready(function() {
   $('.js--section-steps').waypoint(function(direction) {
     $(".js--waypoint-2").addClass('animated fadeInUp');
   }, {
-    offset: '60px;'
+    offset: '50%'
   });
 
   $('.js--section-cities').waypoint(function(direction) {
     $(".js--waypoint-3").addClass('animated fadeIn');
   }, {
-    offset: '60px;'
+    offset: '50%'
   });
 
   $('.js--section-plans').waypoint(function(direction) {
