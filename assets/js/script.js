@@ -29,6 +29,7 @@ $(document).ready(function() {
           $('html, body').animate({
             scrollTop: target.offset().top -60
           }, 1000);
+          $(this).toggleClass('open');
           return false;
         }
       }
