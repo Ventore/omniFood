@@ -35,7 +35,9 @@ $(document).ready(function() {
             scrollTop: target.offset().top -60
           }, 1000);
           $('#nav-icon1').toggleClass('open');
-          $('.main-nav').slideToggle(200);
+          if ($(window).width() < 750) {
+            $('.main-nav').slideToggle(200);
+          }
           return false;
         }
       }
